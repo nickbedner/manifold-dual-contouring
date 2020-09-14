@@ -1,0 +1,22 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+deferred_clear.fx
+deferred_final.fx
+deferred_to.fx
+noise_norm.jpg
+ShaderDN.fx
+ShaderRegular.fx
+WireShader.fx
