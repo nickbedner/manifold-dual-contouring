@@ -132,7 +132,8 @@ namespace Isosurface.ManifoldDC
 					Vector3 nc = this.vertices[i].normal * 0.5f + Vector3.One * 0.5f;
 					nc.Normalize();
 					Color c = new Color(nc);
-					vertices.Add(new VertexPositionColorNormalNormal(this.vertices[i].qef.Solve(1e-6f, 4, 1e-6f), c, this.vertices[i].normal, this.vertices[i].normal));
+					Vector3 pos = this.vertices[i].qef.Solve(1e-6f, 4, 1e-6f);
+					vertices.Add(new VertexPositionColorNormalNormal(pos, c, this.vertices[i].normal, this.vertices[i].normal));
 
 				}
 			}
@@ -147,7 +148,7 @@ namespace Isosurface.ManifoldDC
 			int child_size = size / 2;
 			bool has_children = false;
 
-			Task[] threads = new Task[8];
+			//Task[] threads = new Task[8];
 			bool[] return_values = new bool[8];
 
 			for (int i = 0; i < 8; i++)
@@ -158,7 +159,7 @@ namespace Isosurface.ManifoldDC
 				children[i].child_index = i;
 
 				int index = i;
-				if (threaded > 0 && size > 2)
+				/*if (threaded > 0 && size > 2)
 				{
 					threads[index] = Task.Factory.StartNew(
 						() =>
@@ -168,6 +169,15 @@ namespace Isosurface.ManifoldDC
 							if (!return_values[index])
 								children[index] = null;
 						}, TaskCreationOptions.AttachedToParent);
+					//threads[index].Start();
+				}*/
+				if (size > 2)
+				{
+
+							int temp = 0;
+							return_values[index] = children[index].ConstructNodes(vertices, ref temp, threaded - 1);
+							if (!return_values[index])
+								children[index] = null;
 					//threads[index].Start();
 				}
 				else
@@ -179,7 +189,17 @@ namespace Isosurface.ManifoldDC
 				}
 			}
 
-			if (threaded > 0 && size > 2)
+			if (size > 2)
+			{
+				for (int i = 0; i < 8; i++)
+				{
+					//threads[i].Wait();
+					if (return_values[i])
+						has_children = true;
+				}
+			}
+
+			/*if (threaded > 0 && size > 2)
 			{
 				for (int i = 0; i < 8; i++)
 				{
@@ -187,7 +207,7 @@ namespace Isosurface.ManifoldDC
 					if (return_values[i])
 						has_children = true;
 				}
-			}
+			}*/
 
 			return has_children;
 		}

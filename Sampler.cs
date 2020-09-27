@@ -241,7 +241,8 @@ namespace Isosurface
 
 		public static float Sample(Vector3 pos, int type = 0)
 		{
-			if (ImageData != null)
+			//return Vector3.Distance(pos, Vector3.Zero) - 100.0f;
+			/*if (ImageData != null)
 			{
 				pos *= ImageScale;
 				//pos = Vector3.Clamp(pos, Vector3.Zero, new Vector3(ImageData.GetLength(0), ImageData.GetLength(1), ImageData.GetLength(2)));
@@ -250,7 +251,7 @@ namespace Isosurface
 				pos.Z = Math.Min(ImageData.GetLength(2) - 1, Math.Max((int)pos.Z, 0));
 				return ImageData[(int)pos.X, (int)pos.Y, (int)pos.Z];
 				//return Math.Min(Sphere(pos, (float)Resolution * 0.2f), ImageData[(int)pos.X, (int)pos.Y, (int)pos.Z]);
-			}
+			}*/
 			//if (pos.Y > 8)
 			//	return -1;
 			//return 1;

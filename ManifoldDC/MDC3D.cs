@@ -15,7 +15,7 @@ namespace Isosurface.ManifoldDC
 	public class MDC3D : ISurfaceAlgorithm
 	{
 		public override string Name { get { return "Manifold Dual Contouring"; } }
-		public const bool FlatShading = true;
+		public const bool FlatShading = false;
 
 		private List<VertexPositionColorNormalNormal> VerticesDN { get; set; }
 
@@ -36,7 +36,7 @@ namespace Isosurface.ManifoldDC
 		public MDC3D(GraphicsDevice device, int resolution, int size)
 			: base(device, resolution, size, true, !FlatShading, 2097152)
 		{
-			for (int i = 0; i < 256; i++)
+			/*for (int i = 0; i < 256; i++)
 			{
 				bool[] found = new bool[16];
 				for (int k = 0; k < 16; k++)
@@ -48,7 +48,7 @@ namespace Isosurface.ManifoldDC
 					}
 					found[Utilities.TransformedEdgesTable[i, k]] = true;
 				}
-			}
+			}*/
 
 			EnforceManifold = true;
 			OctreeNode.EnforceManifold = EnforceManifold;
@@ -183,7 +183,7 @@ namespace Isosurface.ManifoldDC
 
 			float size = node.size;
 
-			vs[0] = new VertexPositionColor(new Vector3(x + 0 * size, y + 0 * size, z + 0 * size), c);
+			/*vs[0] = new VertexPositionColor(new Vector3(x + 0 * size, y + 0 * size, z + 0 * size), c);
 			vs[1] = new VertexPositionColor(new Vector3(x + 1 * size, y + 0 * size, z + 0 * size), c);
 			vs[2] = new VertexPositionColor(new Vector3(x + 1 * size, y + 0 * size, z + 0 * size), c);
 			vs[3] = new VertexPositionColor(new Vector3(x + 1 * size, y + 1 * size, z + 0 * size), c);
@@ -212,7 +212,7 @@ namespace Isosurface.ManifoldDC
 			vs[23] = new VertexPositionColor(new Vector3(x + 1 * size, y + 1 * size, z + 1 * size), c);
 
 			OutlineBuffer.SetData<VertexPositionColor>(OutlineLocation * VertexPositionColor.VertexDeclaration.VertexStride, vs, 0, 24, VertexPositionColor.VertexDeclaration.VertexStride);
-			OutlineLocation += 24;
+			OutlineLocation += 24;*/
 
 			/*if (node.type != OctreeNodeType.Leaf || node.draw_info.index == -1 || true)
 			{

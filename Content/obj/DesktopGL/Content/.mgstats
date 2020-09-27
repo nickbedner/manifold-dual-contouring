@@ -1,8 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_clear.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_clear.xnb","EffectProcessor","CompiledEffectContent",843,1056,0.4033658
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_final.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_final.xnb","EffectProcessor","CompiledEffectContent",3658,1158,0.3205311
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_to.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_to.xnb","EffectProcessor","CompiledEffectContent",1523,2944,0.2525468
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/noise_norm.jpg","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/noise_norm.xnb","TextureProcessor","Texture2DContent",18136,262229,0.0355003
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/ShaderDN.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/ShaderDN.xnb","EffectProcessor","CompiledEffectContent",1601,3109,0.2485988
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/ShaderRegular.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/ShaderRegular.xnb","EffectProcessor","CompiledEffectContent",1428,2674,0.2422999
-"c:/Users/Nicholas/Desktop/test/MyGame/Content/WireShader.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/WireShader.xnb","EffectProcessor","CompiledEffectContent",855,2066,0.2528482
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_clear.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_clear.xnb","EffectProcessor","CompiledEffectContent",843,1056,0.3689858
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_final.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_final.xnb","EffectProcessor","CompiledEffectContent",3658,1158,0.2959711
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/deferred_to.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/deferred_to.xnb","EffectProcessor","CompiledEffectContent",1523,2944,0.2795719
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/noise_norm.jpg","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/noise_norm.xnb","TextureProcessor","Texture2DContent",18136,262229,0.0496369
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/ShaderDN.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/ShaderDN.xnb","EffectProcessor","CompiledEffectContent",1601,3109,0.2369217
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/ShaderRegular.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/ShaderRegular.xnb","EffectProcessor","CompiledEffectContent",1428,2674,0.2450287
+"c:/Users/Nicholas/Desktop/test/MyGame/Content/WireShader.fx","c:/Users/Nicholas/Desktop/test/MyGame/Content/bin/DesktopGL/Content/WireShader.xnb","EffectProcessor","CompiledEffectContent",855,2066,0.2355397
